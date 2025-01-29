@@ -1,0 +1,4 @@
+brand: "Ezviz"             
+name: "Ezviz c6c Camera"      
+type: "camera"             
+model: "CS-C6c"         
