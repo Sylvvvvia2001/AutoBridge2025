@@ -1,0 +1,11 @@
+{
+  "domain": "toshiba_ac",
+  "name": "Toshiba AC",
+  "config_flow": true,
+  "dependencies": [],
+  "homekit": {},
+  "iot_class": "cloud_push",
+  "requirements": ["toshiba-ac==0.3.4"],
+  "ssdp": [],
+  "zeroconf": []
+}
