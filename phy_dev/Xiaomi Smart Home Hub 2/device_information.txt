@@ -1,0 +1,4 @@
+brand: "Xiaomi"             
+name: "Xiaomi Smart Home Hub 2"      
+type: "Hub"             
+model: "lumi.gateway.mcn001"         
