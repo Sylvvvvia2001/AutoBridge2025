@@ -1,0 +1,9 @@
+{
+  "version": "1.0.0",
+  "domain": "netgear_enhanced",
+  "name": "Netgear Enhanced",
+  "dependencies": [],
+  "requirements": [
+    "pynetgear-enhanced==0.2.2"
+  ]
+}
