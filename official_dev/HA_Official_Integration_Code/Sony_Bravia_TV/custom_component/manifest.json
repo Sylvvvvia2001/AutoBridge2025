@@ -1,0 +1,8 @@
+{
+  "domain": "braviatv_psk",
+  "name": "Bravia TV PSK",
+  "dependencies": [],
+  "iot_class": "local_polling",
+  "requirements": ["pySonyBraviaPSK==0.2.4"],
+  "version": "0.0.0"
+}
