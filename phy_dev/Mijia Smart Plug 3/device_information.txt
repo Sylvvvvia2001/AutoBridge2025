@@ -1,0 +1,4 @@
+brand: "xiaomi"               
+name: "Mijia Smart Plug 3"       
+type: "plug"                
+model: "cuco.plug.v3"           
