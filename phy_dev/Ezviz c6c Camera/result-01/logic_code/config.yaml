@@ -1,1 +1,5 @@
-
+ezviz:
+  api_key: YOUR_API_KEY
+  device_serial: YOUR_DEVICE_SERIAL
+  account: YOUR_ACCOUNT
+  password: YOUR_PASSWORD
