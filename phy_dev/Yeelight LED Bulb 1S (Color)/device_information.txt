@@ -1,1 +1,4 @@
-
+brand: "Yeelight"             
+name: "Yeelight LED Bulb 1s (Color)"      
+type: "Bulb"             
+model: "Yeelight Smart Bulb 1S"         
