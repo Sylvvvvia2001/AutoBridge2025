@@ -1,1 +1,5 @@
-
+switch:
+  - platform: mijia_smart_plug_3
+    host: YOUR_PLUG_IP
+    token: YOUR_PLUG_TOKEN
+    name: Mijia Smart Plug 3
