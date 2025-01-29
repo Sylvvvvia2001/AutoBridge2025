@@ -1,0 +1,7 @@
+{
+  "domain": "petkit",
+  "name": "Petkit",
+  "iot_class": "cloud_polling",
+  "requirements": [],
+  "version": "0.1.0"
+}
