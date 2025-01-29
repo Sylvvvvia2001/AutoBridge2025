@@ -1,0 +1,4 @@
+brand: "Xiaomi"             
+name: "Mi Smart Desk Lamp Lite"      
+type: "Light"             
+model: "philips.light.lite"         
