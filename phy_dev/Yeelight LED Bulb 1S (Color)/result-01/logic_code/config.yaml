@@ -1,1 +1,3 @@
-
+bulb:
+  ip_address: "192.168.1.2"
+  port: 55443
