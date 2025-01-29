@@ -1,0 +1,8 @@
+{
+  "domain": "epson_printer",
+  "name": "Epson Printer",
+  "version": "0.0.1",
+  "iot_class": "local_polling",
+  "loggers": [],
+  "requirements": ["beautifulsoup4==4.12.3"]
+}
