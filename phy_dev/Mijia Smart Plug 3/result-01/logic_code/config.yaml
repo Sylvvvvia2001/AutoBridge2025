@@ -1,1 +1,2 @@
-
+ip_address: #The IP address of your Mijia Smart Plug 3.
+token: #A unique token used for authentication, extracted using the Mi Home app or the Xiaomi Cloud Tokens Extractor tool.
