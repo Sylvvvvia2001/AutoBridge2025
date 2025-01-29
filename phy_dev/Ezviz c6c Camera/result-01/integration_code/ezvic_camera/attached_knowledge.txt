@@ -1,0 +1,34 @@
+Github code for Ezviz Camera C6c
+
+[Lab name][url]
+ha-ezviz
+https://github.com/RenierM26/ha-ezviz
+[DETAILED DESCRIPTION]
+This GitHub repository provides an Ezviz component for HASSIO, focusing on testing and implementing the latest features for Ezviz cameras within the Home Assistant ecosystem.
+
+
+******************************************
+APIs and SDKs for Ezviz Camera C6c
+
+The official EZVIZ support page provides access to FAQs, product categories, and other resources, but does not directly link to the SDK documentation. However, detailed information about the EZVIZ Open SDK API can be found on a third-party site, CCTVAPP.NET, which outlines the SDK's capabilities, including device operation API, live view API, playback API, audio API, and more. The SDK is primarily geared towards PC applications, and before starting development for other systems, it's recommended to familiarize yourself with the connection procedures for the OPEN EZVIZ system.
+
+Key features of the EZVIZ Open SDK include:
+
+Support for EZVIZ account login, live view, playback, and device operations.
+Receiving alarm information.
+APIs for live view, playback, getting video information, two-way audio, data API, device operation API, and more.
+It introduces the main calling procedures, API of each module, and the whole structure of the OPEN SDK.
+For more details and to access the SDK, you can visit the EZVIZ Open SDK API Manual on CCTVAPP.NET and the official EZVIZ documentation on their support page. Please note that while the CCTVAPP.NET site provides a broad overview of the capabilities, the actual SDK and further documentation can be found by following the guidance provided in the manual, including visiting the EZVIZ Open Platform http://open.ys7.com/doc/en/pc/index.html for comprehensive documentation and updates​​.
+
+Remember, this SDK is primarily intended for use with PC applications. If your project involves other platforms, ensure to check compatibility and specific requirements through the EZVIZ Open Platform or contact EZVIZ support for further assistance.
+
+******************************************
+Web Content for Ezviz Camera C6c
+
+
+
+******************************************
+Manual\Official Document Information for Ezviz Camera C6c
+
+The official manual for the Ezviz C6c Camera can be found in the EZVIZ Download Center. This site provides access to firmware updates, user manuals, datasheets, and more for various EZVIZ devices. Unfortunately, specific technical details such as protocol and connection methods are not directly available in the summary of the site. For comprehensive information, including specifications, setup instructions, and usage guidelines for the Ezviz C6c Camera, please refer to the EZVIZ support page directly at EZVIZ Support - Download Center​​.
+https://mfs.ezvizlife.com/C6c_User%20Manual_EN(EU)_V1.0.0.pdf?ver=44763
