@@ -1,0 +1,10 @@
+{
+    "domain": "asusrouter",
+    "name": "AsusRouter",
+    "config_flow": true,
+    "integration_type": "hub",
+    "iot_class": "local_polling",
+    "loggers": ["asusrouter"],
+    "requirements": ["asusrouter==2.0.0.dev0"],
+    "version": "1.0.0.dev0"
+  }
