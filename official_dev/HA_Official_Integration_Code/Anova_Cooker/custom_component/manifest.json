@@ -1,0 +1,11 @@
+{
+    "domain": "anova_cooker",
+    "name": "ANOVA Precision Cooker",
+    "version": "0.0.1",
+    "config_flow": true,
+    "requirements": ["aionova==0.0.6"],
+    "ssdp": [],
+    "zeroconf": [],
+    "homekit": {},
+    "dependencies": [],
+  }
