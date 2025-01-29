@@ -1,0 +1,17 @@
+{
+  "domain": "dreame_vacuum",
+  "name": "Dreame Vacuum",
+  "config_flow": true,
+  "iot_class": "local_polling",
+  "requirements": [
+    "pillow",
+    "numpy",
+    "pybase64",
+    "requests",
+    "pycryptodome",
+    "python-miio",
+    "py-mini-racer",
+    "paho-mqtt"
+  ],
+  "version": "v1.0.5"
+}
