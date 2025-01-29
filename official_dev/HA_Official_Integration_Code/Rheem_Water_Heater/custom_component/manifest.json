@@ -1,0 +1,7 @@
+{
+  "domain": "rheem_eziset",
+  "name": "Rheem EziSET",
+  "config_flow": true,
+  "integration_type": "device",
+  "iot_class": "local_polling",
+}
