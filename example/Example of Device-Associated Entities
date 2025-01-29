@@ -1,0 +1,26 @@
+A light entity controls the brightness, hue and saturation color value, white value, color temperature and effects
+of a light source. Derive platform entities from homeassistant.components.light.LightEntity.
+#Properties
+{brightness}, Type: int&None, Description: The brightness of this light between 1..255
+{color_mode}, Type: ColorMode&None, Description: The color mode of the light. The returned color mode must
+be present in the supported_color_modes property unless the light is rendering an effect.
+(...)
+#Color Modes
+New integrations must implement both color_mode and supported_color_modes. If an integration is upgraded to
+support color mode, both color_mode and supported_color_modes should be implemented.
+Supported color modes are defined by using values in the ColorMode enum.
+If a light does not implement the supported_color_modes, the LightEntity will attempt deduce it based on
+deprecated flags in the supported_features property:
+Start with an empty set
+If SUPPORT_COLOR_TEMP is set, add ColorMode.COLOR_TEMP
+If SUPPORT_COLOR is set, add ColorMode.HS
+If SUPPORT_WHITE_VALUE is set, add ColorMode.RGBW
+If SUPPORT_BRIGHTNESS is set and no color modes have yet been added, add ColorMode.BRIGHTNESS
+If no color modes have yet been added, add ColorMode.ONOFF
+(...)
+#Supported Features
+Supported features are defined by using values in the LightEntityFeature enum and are combined using the
+bitwise.
+{EFFECT}: Controls the effect a light source shows// {FLASH}: Controls the duration of a flash a light source shows
+{TRANSITION}: Controls the duration of transitions between color and effects
+(...)

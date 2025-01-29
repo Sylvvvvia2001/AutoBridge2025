@@ -1,0 +1,41 @@
+# Turn on Light Device
+class MyLightEntity(LightEntity):
+    def turn_on(self, **kwargs):
+        """Turn the device on."""
+
+    async def async_turn_on(self, **kwargs):
+        """Turn device on."""
+
+# If the light supports brightness, sometimes the brightness value needs scaling:
+from homeassistant.util.color import value_to_brightness
+
+BRIGHTNESS_SCALE = (1, 1023)
+
+...
+
+    @property
+    def brightness(self) -> Optional[int]:
+        """Return the current brightness."""
+        return value_to_brightness(BRIGHTNESS_SCALE, self._device.brightness)
+
+# To scale the brightness to the device range:
+from homeassistant.util.percentage import percentage_to_ranged_value
+BRIGHTNESS_SCALE = (1, 1023)
+
+...
+
+class MyLightEntity(LightEntity):
+    async def async_turn_on(self, **kwargs) -> None:
+        """Turn device on."""
+
+        ...
+
+        value_in_range = math.ceil(percentage_to_ranged_value(BRIGHTNESS_SCALE, kwargs[ATTR_BRIGHTNESS]))
+
+# Turn Off Light Device
+class MyLightEntity(LightEntity):
+    def turn_off(self, **kwargs):
+        """Turn the device off."""
+
+    async def async_turn_off(self, **kwargs):
+        """Turn device off."""

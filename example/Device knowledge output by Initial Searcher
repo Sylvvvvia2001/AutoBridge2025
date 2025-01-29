@@ -1,0 +1,62 @@
+[Github code for Yeelight LED Bulb 1S (Color)]
+This discussion in the homeassistant-powercalc repository mentions the Yeelight YLDP13YL 8.5W Smart LED
+Bulb 1S. A user requested the addition of a LUT for this specific bulb, and it was added to the repository. This tool
+helps in calculating the power consumption of smart bulbs, including the Yeelight models, within Home Assistant.
+Yeelink/Yeelight Devices for Home Assistant
+https://github.com/bramstroker/homeassistant-powercalc/discussions/288
+This repository provides integration for Yeelink/Yeelight devices, including various Yeelight smart lights, for
+Home Assistant. While the repository does not explicitly list the Yeelight LED Bulb 1S (Color) model, it supports a
+wide range of Yeelight devices. It could potentially be compatible or provide a useful starting point for integrating
+Yeelight devices with Home Assistant. These resources offer a starting point for integrating Yeelight smart bulbs
+with Home Assistant, either through power consumption calculation or direct device control via the Yeelink
+integration.
+https://github.com/al-one/hass-miio-yeelink
+******************************************
+[APIs and SDKs for Yeelight LED Bulb 1S (Color)]
+Yeelight 3rd-party Control Protocol
+This protocol is designed for developers and IoT enthusiasts, enabling the development of applications that can
+discover and control Yeelight WiFi devices within the same LAN. It uses a SSDP-like discovery mechanism and
+JSON encoded commands. It’s important to note that all messages defined in this protocol are not encrypted,
+which means the security of Yeelight devices relies on the router’s security level.
+YeeLight Python Library
+The YeeLight Python library facilitates control over Yeelight RGB LED bulbs via WiFi. While it does not support
+some features of the Yeelight API, like discovery, it is comprehensive for most control needs. The library allows
+for discovering bulbs on your network, and controlling their state, brightness, color, and more. It also supports
+effects, which control how the bulb transitions between states, and provides a way to listen for real-time state
+updates from the bulb.
+https://yeelight.readthedocs.io/en/latest/
+******************************************
+[Manual & Official Document Information for Yeelight LED Bulb 1S (Color)]
+Document/Manual:
+Yeelight Smart LED Bulb 1S (Color) Essential Lighting
+URL: https://home.yeelight.de/en/products/essential-lighting/smart-led-bulb-1s-color/
+Technical Details:
+Model Number: YLDP13YL
+Base Type: E27
+Rated Power: 8.5 W (60 W incandescent equivalent)
+Voltage: 220–240 V 50/60 Hz 0.04 A
+Operating Temperature: -10 °C to +40 °C
+Luminous Flux (Brightness): 40–800 lm, adjustable
+Color Temperature: 1700–6500 K, adjustable
+Lifetime: > 25,000 h
+Color Rendering Index (CRI): > 80
+Warm-Up Time to 60% Light: Instant
+Number of Switch Cycles (On/Off): > 12,500
+Compatibility: Android 4.4 (or higher) & iOS 8.0 (or higher)
+Wireless Connection: WLAN IEEE 802.11 b/g/n 2.4 GHz
+The Yeelight LED Bulb 1S (Color) stands out for its lower power consumption, offering 800 lumens of luminous
+flux with only 8.5W, making it energy-efficient. It provides a wide range of color temperatures from warm white
+to daylight, allowing users to set the perfect ambiance for any moment. Additionally, it supports group and remote
+control, enabling adjustment of bulbs individually or in groups, and control from anywhere via the Yeelight iOS
+and Android apps.
+The bulb can be integrated with smart home platforms like Amazon Alexa, Google Assistant, and Apple HomeKit,
+allowing for voice and app control. It also features music sync capability, which enables the lights to change
+colors in sync with your favorite songs, enhancing the ambiance for parties or holiday decorations.
+https://home.yeelight.de/en/products/essential-lighting/smart-led-bulb-1s-color/ https://en.yeelight.com/product/smart-
+led-bulb-1s-color/
+For more advanced users, LAN control is supported for enhanced responsiveness without relying on cloud services,
+requiring configuration through the Yeelight app and possibly the Google (Local) Home app for integration with
+Google Assistant. Firmware updates and factory reset options are also available to maintain and troubleshoot the
+bulb as necessary.
+https://www.cnx-software.com/2020/02/09/yeelight-smart-led-bulb-1s-color-review-with-android-app-and-google-local-
+home/
