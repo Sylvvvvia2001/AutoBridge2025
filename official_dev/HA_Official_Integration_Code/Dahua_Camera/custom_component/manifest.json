@@ -1,0 +1,9 @@
+{
+    "domain": "dahua",
+    "name": "Dahua",
+    "iot_class": "local_polling",
+    "dependencies": [],
+    "version": "0.1.0",
+    "config_flow": true,
+    "requirements": []
+  }
