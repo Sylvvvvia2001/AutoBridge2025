@@ -1,0 +1,11 @@
+{
+    "domain": "xiaomi_hub",
+    "name": "Xiaomi Smart Home Hub 2",
+    "config_flow": false,
+    "version": "1.0",
+    "requirements": ["some-python-library==version"], 
+    "dependencies": [],
+    "codeowners": [],
+    "iot_class": "Local Polling"
+  }
+  
