@@ -1,0 +1,12 @@
+{
+    "domain": "yeelightbt_custom",
+    "name": "Yeelight LED Bulb 1s (Color) Custom Integration",
+    "documentation": "https://www.yeelight.com",
+    "dependencies": [],
+    "codeowners": [],
+    "requirements": ["yeelight==0.5.3"],
+    "version": "1.0.0",
+    "config_flow": false,
+    "issue_tracker": ""
+  }
+  
