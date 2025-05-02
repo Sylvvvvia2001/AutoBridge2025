@@ -10,6 +10,7 @@ All experiments in this work were conducted on an Ubuntu 22.04 LTS machine equip
 
 - [Home Assistant Developer Docs](https://developers.home-assistant.io/)  
 - [OpenHAB Developer Guide](https://www.openhab.org/docs/developer/)  
+and other official focumentation for your targeted platform.
 
 ---
 
