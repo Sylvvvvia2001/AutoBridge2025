@@ -1,0 +1,21 @@
+{
+    "config": {
+        "step": {
+            "user": {
+                "data": {
+                    "host": "IP Address",
+                    "name": "Name"
+                },
+                "description": "Set up your Yeelight LED Bulb 1S.",
+                "title": "Yeelight LED Bulb 1S"
+            }
+        },
+        "error": {
+            "cannot_connect": "Failed to connect",
+            "unknown": "Unexpected error"
+        },
+        "abort": {
+            "already_configured": "Device is already configured"
+        }
+    }
+} 

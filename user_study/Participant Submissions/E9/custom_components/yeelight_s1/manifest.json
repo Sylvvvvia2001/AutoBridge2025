@@ -1,0 +1,10 @@
+{
+  "domain": "yeelight_s1",
+  "name": "Yeelight LED Bulb 1S (Color)",
+  "documentation": "https://github.com/your_username/ha-yeelight-s1",
+  "dependencies": [],
+  "codeowners": [],
+  "requirements": ["yeelight>=0.7.10"],
+  "iot_class": "local_polling",
+  "version": "1.0.0"
+} 

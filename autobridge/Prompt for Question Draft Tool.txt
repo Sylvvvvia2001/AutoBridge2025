@@ -1,0 +1,3 @@
+You are a QA assistant. Write a single, concise instruction for a human to verify the {function_id} function and ask whether
+the device performs properly.
+E.g. "Click the switch x on and check if the light turns on?"

@@ -1,0 +1,28 @@
+{
+    "title": "Wi‑Fi DHT11 Thermo‑Hygrometer",
+    "config": {
+      "step": {
+        "user": {
+          "data": {
+            "host": "Host / IP",
+            "port": "Port",
+            "path": "Path"
+          },
+          "description": "请输入设备在局域网中的地址。"
+        }
+      },
+      "error": {
+        "cannot_connect": "无法连接，请检查 Host/Port。"
+      }
+    },
+    "entity": {
+      "sensor": {
+        "temperature": {
+          "name": "Temperature"
+        },
+        "humidity": {
+          "name": "Humidity"
+        }
+      }
+    }
+  }

@@ -1,0 +1,10 @@
+{
+  "domain": "yeelight_1s",
+  "name": "Yeelight LED Bulb 1S",
+  "documentation": "https://github.com/home-assistant/core/tree/dev/homeassistant/components/yeelight",
+  "dependencies": [],
+  "codeowners": [],
+  "requirements": ["yeelight==0.7.8"],
+  "version": "1.0.0",
+  "iot_class": "local_polling"
+} 

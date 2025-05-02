@@ -1,0 +1,64 @@
+title: 温湿度监测系统
+views:
+  - title: 主视图
+    cards:
+      # 温度卡片
+      - type: gauge
+        entity: sensor.esp8266_temperature
+        name: 房间温度
+        min: 0
+        max: 40
+        severity:
+          green: 0
+          yellow: 26
+          red: 30
+        needle: true
+        
+      # 湿度卡片
+      - type: gauge
+        entity: sensor.esp8266_humidity
+        name: 房间湿度
+        min: 0
+        max: 100
+        severity:
+          green: 40
+          yellow: 30
+          red: 20
+        needle: true
+        
+      # 温湿度历史图表
+      - type: history-graph
+        title: 温湿度历史记录
+        entities:
+          - entity: sensor.esp8266_temperature
+            name: 温度
+          - entity: sensor.esp8266_humidity
+            name: 湿度
+        hours_to_show: 24
+        
+      # 传感器详细信息卡片
+      - type: entities
+        title: 传感器详情
+        entities:
+          - entity: sensor.esp8266_temperature
+            name: 温度
+          - entity: sensor.esp8266_humidity
+            name: 湿度
+          - entity: sensor.esp8266_uptime
+            name: 设备运行时间
+        show_header_toggle: false
+      
+      # 信息卡片
+      - type: markdown
+        title: 关于
+        content: >
+          ## ESP8266 DIY温湿度监测系统
+          
+          该系统使用ESP8266 WiFi芯片连接DHT11温湿度传感器和OLED显示屏，通过WiFi将数据传输到Home Assistant平台。
+          
+          **硬件组成：**
+          - ESP8266 NodeMCU
+          - DHT11 温湿度传感器
+          - 0.96寸OLED显示屏
+          
+          数据每分钟更新一次。 

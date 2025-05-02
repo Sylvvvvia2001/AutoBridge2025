@@ -1,0 +1,21 @@
+{
+    "config": {
+        "step": {
+            "user": {
+                "data": {
+                    "host": "IP 地址",
+                    "name": "名称"
+                },
+                "description": "设置您的易来 LED 智能灯泡 1S。",
+                "title": "易来 LED 智能灯泡 1S"
+            }
+        },
+        "error": {
+            "cannot_connect": "连接失败",
+            "unknown": "未知错误"
+        },
+        "abort": {
+            "already_configured": "设备已配置"
+        }
+    }
+} 

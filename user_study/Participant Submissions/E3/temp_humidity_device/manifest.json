@@ -1,0 +1,11 @@
+{
+  "domain": "temp_humid_sensor",
+  "name": "Temperature & Humidity Sensor",
+  "documentation": "https://github.com/yourusername/temp_humid_sensor",
+  "dependencies": [],
+  "codeowners": ["@yourusername"],
+  "requirements": ["aiohttp"],
+  "iot_class": "local_polling",
+  "version": "0.1.0",
+  "config_flow": true
+}

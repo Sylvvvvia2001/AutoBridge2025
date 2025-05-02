@@ -1,0 +1,9 @@
+{
+    "domain": "temperature_humidity",
+    "name": "Temperature & Humidity",
+    "version": "1.0.0",
+    "documentation": "https://example.com",
+    "requirements": [],
+    "codeowners": ["@your_github_id"],
+    "iot_class": "local_polling"
+  }

@@ -1,0 +1,9 @@
+{
+    "domain": "temp_humid_sensor",
+    "name": "Temperature Humidity Sensor",
+    "documentation": "https://github.com/yourname/temp_humid_sensor",
+    "dependencies": [],
+    "codeowners": ["@yourgithub"],
+    "requirements": [],
+    "version": "1.0.0"
+  }

@@ -1,0 +1,9 @@
+{
+  "domain": "yeelight_bulb",
+  "name": "Yeelight Bulb",
+  "documentation": "https://www.home-assistant.io/integrations/yeelight",
+  "requirements": ["yeelight==0.6.0"],
+  "dependencies": [],
+  "codeowners": ["@your_github_username"],
+  "version": "1.0.0"
+} 

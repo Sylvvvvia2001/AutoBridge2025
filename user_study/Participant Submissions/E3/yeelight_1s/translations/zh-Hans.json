@@ -1,0 +1,21 @@
+{
+    "config": {
+        "step": {
+            "user": {
+                "title": "添加 Yeelight LED Bulb 1S",
+                "description": "请输入您的 Yeelight LED Bulb 1S 的 IP 地址。",
+                "data": {
+                    "host": "IP 地址",
+                    "name": "名称"
+                }
+            }
+        },
+        "error": {
+            "cannot_connect": "无法连接到灯泡。请确保 IP 地址正确且灯泡已开启。",
+            "unknown": "发生意外错误。"
+        },
+        "abort": {
+            "already_configured": "设备已配置"
+        }
+    }
+} 

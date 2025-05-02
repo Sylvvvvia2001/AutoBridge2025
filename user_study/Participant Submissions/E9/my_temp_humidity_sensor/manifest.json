@@ -1,0 +1,11 @@
+{
+    "domain": "my_temp_humidity_sensor",
+    "name": "My Temp Humidity Sensor",
+    "version": "1.0",
+    "documentation": "https://www.home-assistant.io/integrations/my_temp_humidity_sensor/",
+    "dependencies": [],
+    "codeowners": [],
+    "requirements": [
+      "requests"
+    ]
+  }

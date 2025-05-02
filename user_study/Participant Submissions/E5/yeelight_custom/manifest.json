@@ -1,0 +1,9 @@
+{
+    "version": "1.0.0",
+    "domain": "yeelight_custom",
+    "name": "Yeelight Custom Integration",
+    "documentation": "https://example.com",
+    "requirements": ["yeelight==0.7.8"],
+    "codeowners": ["@YourName"],
+    "iot_class": "local_polling"
+  }

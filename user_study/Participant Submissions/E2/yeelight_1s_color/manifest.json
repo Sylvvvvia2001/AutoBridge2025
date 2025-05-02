@@ -1,0 +1,10 @@
+{
+  "domain": "yeelight_1s_color",
+  "name": "Yeelight LED Bulb 1S Color (Custom)",
+  "version": "1.0.0",
+  "requirements": [
+    "yeelight==0.12.0"
+  ],
+  "dependencies": [],
+  "codeowners": []
+}

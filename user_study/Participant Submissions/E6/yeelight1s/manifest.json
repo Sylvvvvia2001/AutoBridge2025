@@ -1,0 +1,9 @@
+{
+    "domain": "yeelight_1s",
+    "name": "Yeelight 1S Light",
+    "version": "1.0.0",
+    "documentation": "https://www.home-assistant.io/integrations/yeelight",
+    "requirements": ["yeelight==0.7.11"],
+    "dependencies": [],
+    "codeowners": ["@yourgithub"]
+  }

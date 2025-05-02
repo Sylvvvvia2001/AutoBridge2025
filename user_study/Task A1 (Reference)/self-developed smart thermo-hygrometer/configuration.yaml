@@ -1,0 +1,6 @@
+sensor :
+2 - platform : temperature_humidity
+3 name : " Temperature & Humidity "
+4 host : " http : //192.168.137.60"
+5 port : 80
+6 path : "/ data "

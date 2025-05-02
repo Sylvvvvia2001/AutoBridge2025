@@ -1,0 +1,12 @@
+
+{
+    "domain": "dht11_sensor",
+    "name": "DHT11 Sensor",
+    "version": "1.0.0",
+    "documentation": "",
+    "requirements": ["aiohttp"],
+    "dependencies": [],
+    "codeowners": [],
+    "config_flow": true,
+    "iot_class": "local_polling"
+}

@@ -1,0 +1,9 @@
+{
+    "domain": "yeelight_lan",
+    "name": "Yeelight LAN Light",
+    "documentation": "",
+    "dependencies": [],
+    "codeowners": [],
+    "version": "1.0.0",
+    "requirements": ["yeelight==0.7.14"]
+  }

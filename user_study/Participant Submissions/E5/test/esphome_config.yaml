@@ -1,0 +1,73 @@
+name: esp8266_dht11
+friendly_name: 温湿度传感器
+
+esp8266:
+  board: nodemcuv2
+
+# 启用日志记录
+logger:
+
+# 启用Home Assistant API
+api:
+  password: "yourpassword"
+
+ota:
+  password: "yourpassword"
+
+wifi:
+  ssid: "你的WiFi名称"
+  password: "你的WiFi密码"
+
+  # 启用AP模式失败时的后备方案
+  ap:
+    ssid: "ESP8266温湿度传感器"
+    password: "yourpassword"
+
+# 设置I2C总线用于OLED显示屏
+i2c:
+  sda: GPIO4  # D2引脚
+  scl: GPIO5  # D1引脚
+  scan: true  # 启动时扫描I2C设备
+
+# 传感器配置
+sensor:
+  # DHT11 温湿度传感器
+  - platform: dht
+    pin: GPIO2  # D4引脚
+    model: DHT11
+    temperature:
+      name: "ESP8266温度"
+      id: temperature
+      accuracy_decimals: 1
+    humidity:
+      name: "ESP8266湿度"
+      id: humidity
+      accuracy_decimals: 1
+    update_interval: 60s
+  
+  # 设备运行时间传感器
+  - platform: uptime
+    name: "ESP8266运行时间"
+    id: uptime
+    update_interval: 60s
+
+# OLED显示屏配置
+display:
+  - platform: ssd1306_i2c
+    model: "SSD1306 128x64"
+    address: 0x3C
+    lambda: |-
+      it.printf(0, 0, id(font), "温度: %.1f °C", id(temperature).state);
+      it.printf(0, 16, id(font), "湿度: %.1f %%", id(humidity).state);
+      it.printf(0, 32, id(font), "WiFi: %d dBm", WiFi.getRSSI());
+      it.printf(0, 48, id(font), "运行: %d 分钟", (id(uptime).state / 60));
+
+font:
+  - file: "gfonts://NotoSansSC"
+    id: font
+    size: 12
+
+# 设置时间同步
+time:
+  - platform: sntp
+    id: sntp_time 

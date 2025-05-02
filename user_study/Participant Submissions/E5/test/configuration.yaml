@@ -1,0 +1,64 @@
+# Home Assistant配置文件
+# 此文件应放在Home Assistant配置目录下
+
+# 如果使用ESPHome方式，以下配置不是必需的，因为ESPHome会自动将设备添加到Home Assistant
+# 如果使用Arduino代码方式，需要添加以下配置
+
+# 添加REST传感器以接收Arduino发送的数据
+sensor:
+  # 温度传感器
+  - platform: rest
+    name: ESP8266温度
+    resource: http://homeassistant:8123/api/states/sensor.esp8266_temperature
+    value_template: "{{ value_json.state }}"
+    unit_of_measurement: "°C"
+    device_class: temperature
+    state_class: measurement
+    scan_interval: 60
+
+  # 湿度传感器
+  - platform: rest
+    name: ESP8266湿度
+    resource: http://homeassistant:8123/api/states/sensor.esp8266_humidity
+    value_template: "{{ value_json.state }}"
+    unit_of_measurement: "%"
+    device_class: humidity
+    state_class: measurement
+    scan_interval: 60
+
+# 自定义实体显示
+homeassistant:
+  customize:
+    sensor.esp8266_temperature:
+      friendly_name: 房间温度
+      icon: mdi:thermometer
+    sensor.esp8266_humidity:
+      friendly_name: 房间湿度
+      icon: mdi:water-percent
+
+# 添加一个简单的仪表板
+lovelace:
+  dashboards:
+    temperature-dashboard:
+      mode: yaml
+      title: 温湿度监测
+      icon: mdi:thermometer
+      show_in_sidebar: true
+      filename: dashboards/temperature.yaml
+
+# 添加一个自动化示例 - 温度过高时发送通知
+automation:
+  - alias: "温度过高警报"
+    trigger:
+      platform: numeric_state
+      entity_id: sensor.esp8266_temperature
+      above: 30
+    condition:
+      condition: time
+      after: '08:00:00'
+      before: '22:00:00'
+    action:
+      service: notify.mobile_app
+      data:
+        title: "温度警报"
+        message: "当前房间温度已超过30°C！" 

@@ -1,0 +1,11 @@
+{
+    "domain": "wifidht",
+    "name": "Wi‑Fi DHT11 Thermo‑Hygrometer",
+    "version": "1.0.0",
+    "documentation": "https://github.com/yourname/wifidht",
+    "requirements": [],
+    "codeowners": ["@your_github"],
+    "config_flow": true,
+    "iot_class": "local_polling",
+    "loggers": ["custom_components.wifidht"]
+  }
